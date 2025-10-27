@@ -1,0 +1,22 @@
+# AI Stock Trading Bot - Required Libraries
+# Install all with: pip install -r requirements.txt
+
+# News API & Web Requests
+requests>=2.32.0
+
+# Sentiment Analysis
+vaderSentiment>=3.3.2
+
+# AI/ML Libraries
+transformers>=4.57.0       # Hugging Face transformers (for FinBERT)
+torch>=2.9.0               # PyTorch (deep learning framework)
+scikit-learn>=1.7.0        # Machine learning library
+numpy>=2.3.0               # Numerical computing
+pandas>=2.3.0              # Data manipulation
+
+# Stock Data & Trading
+yfinance>=0.2.66           # Yahoo Finance API (historical stock data)
+alpaca-trade-api>=3.2.0    # Alpaca trading API (paper trading)
+
+# Technical Indicators
+ta>=0.11.0                 # Technical analysis library
