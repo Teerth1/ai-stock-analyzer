@@ -9,11 +9,10 @@ import requests
 from datetime import datetime, timedelta
 
 # Configuration
-NEWS_API_KEY = 'your_newsapi_key_here'  # Get free key at https://newsapi.org/
+NEWS_API_KEY = '874bce09c7764ba594e67966e4392c68'  # Get free key at https://newsapi.org/
 
-# ============================================================================
-# NEWS FETCHING
-# ============================================================================
+
+
 
 def fetch_news(symbol, api_key, days_back=2):
     """Fetch recent news articles about a stock."""
@@ -60,9 +59,9 @@ def get_stock_sentiment(symbol, api_key, finbert_analyzer):
         return 0, 0
 
 
-# ============================================================================
+
 # STOCK ANALYSIS
-# ============================================================================
+
 
 def analyze_stock(symbol, news_api_key=None, use_ml=True):
     """
@@ -268,9 +267,9 @@ def make_recommendation(results):
     }
 
 
-# ============================================================================
+
 # MAIN FUNCTION
-# ============================================================================
+
 
 if __name__ == "__main__":
     import sys
@@ -279,7 +278,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         symbol = sys.argv[1].upper()
     else:
-        symbol = 'AAPL'  # Default to Apple
+        symbol = 'GOOGL'  # Default to Google
 
     # Analyze the stock
     results = analyze_stock(

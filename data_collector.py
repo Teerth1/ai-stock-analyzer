@@ -3,10 +3,6 @@
 
 import yfinance as yf
 
-# ============================================================================
-# DATA COLLECTION FUNCTIONS
-# ============================================================================
-
 def fetch_historical_data(symbol, start_date=None, end_date=None, period='1y'):
     """
     Fetch historical stock data from Yahoo Finance.
@@ -108,10 +104,6 @@ def get_stock_data(symbol, use_cache=False):
     return df
 
 
-# ============================================================================
-# UTILITY FUNCTIONS
-# ============================================================================
-
 def print_data_summary(df):
     """
     Print a summary of the fetched data.
@@ -136,10 +128,6 @@ def print_data_summary(df):
     print(f"  Worst Day: {df['Return'].min():.3f}%")
     print("="*70)
 
-
-# ============================================================================
-# TEST CODE
-# ============================================================================
 
 if __name__ == "__main__":
     # Test the data collector
